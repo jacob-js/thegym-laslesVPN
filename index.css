@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Rubik', sans-serif;
+    /* background-color: #F6F6F6; */
+}
+
+.stats{
+    box-shadow: 19px 26px 24px 0px rgba(0,0,0,0.05);
+}
+
+@layer components {
+    .btn-outline{
+        @apply border-default text-default border px-16 py-2 rounded-full
+    }
+    .btn-primary{
+        @apply bg-default text-white px-16 py-4 rounded-md font-bold
+    }
+}
