@@ -13,39 +13,41 @@
     <title>LaslesVPN</title>
 </head>
 <body class="">
-    <nav class="flex justify-between place-items-center px-32 py-6">
+    <nav class="flex justify-between place-items-center px-6 md:px-16 lg:px-32 py-6">
         <div class="logo flex items-center gap-x-3">
             <img src="./img/logo.svg" alt="Logo">
         </div>
-        <div class="flex gap-6">
+        <i class="bi bi-list lg:hidden cursor-pointer"></i>
+        <div class="hidden lg:flex gap-6">
             <div class="text-gray-600 cursor-pointer">About</div>
             <div class="text-gray-600 cursor-pointer">Features</div>
             <div class="text-gray-600 cursor-pointer">Pricing</div>
             <div class="text-gray-600 cursor-pointer">Testimonials</div>
             <div class="text-gray-600 cursor-pointer">Help</div>
         </div>
-        <div class="flex gap-6 items-center">
+        <div class="hidden lg:flex gap-6 items-center">
             <div class="font-bold text-gray-900 cursor-pointer">Sign In</div>
             <button class="btn-outline">Sign Up</button>
         </div>
     </nav>
 
-    <section class="flex justify-between px-32 items-center py-10">
-        <div class="space-y-10 max-w-xl">
-            <h1 class="text-5xl text-gray-900 tracking-wider font-semibold">
+    <section class="lg:flex justify-between px-6 md:px-16 lg:px-32 items-center py-10">
+        <img src="./img/user-hero.svg" alt="" class="lg:hidden mb-6 md:mb-8">
+        <div class="space-y-5 sm:space-y-10 max-w-xl">
+            <h1 class="text-2xl text-center sm:text-left lg:text-5xl md:text-3xl text-gray-900 sm:tracking-wider font-semibold">
                 Want anything to be easy with <span class="font-extrabold">LaslesVPN.</span>
             </h1>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-center md:text-left">
                 Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
             </p>
-            <button class="btn-primary">Get Started</button>
+            <button class="btn-primary w-full sm:w-fit">Get Started</button>
         </div>
-        <img src="./img/user-hero.svg" alt="">
+        <img src="./img/user-hero.svg" alt="" class="hidden lg:block">
     </section>
 
-    <div class="sections px-32 pb-6 overflow-x-hidden">
-        <div class="stats rounded-xl mt-40 grid grid-cols-3 py-5">
-            <div class="flex items-center space-x-6 justify-center border-r border-gray-200 py-10">
+    <div class="sections px-6 md:px-16 lg:px-32 pb-6 overflow-x-hidden">
+        <div class="stats rounded-xl md:mt-40 grid grid-cols-1 md:grid-cols-3 py-5 px-5">
+            <div class="flex items-center space-x-6 justify-center border-b md:border-b-0 md:border-r border-gray-200 py-10">
                 <div class="w-14 h-14 p-2 bg-red-100 rounded-full flex items-center justify-center">
                     <i class="bi bi-person-fill text-default text-2xl"></i>
                 </div>
@@ -54,7 +56,7 @@
                     <div class="text-gray-500">Users</div>
                 </div>
             </div>
-            <div class="flex items-center space-x-6 justify-center py-10 border-r border-gray-200">
+            <div class="flex items-center space-x-6 justify-center py-10 border-b md:border-b-0 md:border-r border-gray-200">
                 <div class="w-14 h-14 p-2 bg-red-100 rounded-full flex items-center justify-center">
                     <i class="bi bi-geo-alt-fill text-default text-2xl"></i>
                 </div>
@@ -74,16 +76,16 @@
             </div>
         </div>
 
-        <div class="mt-40 py-5 grid grid-cols-[1fr_40%]">
+        <div class="mt-6 space-y-5 flex flex-col items-center md:mt-40 py-5 md:grid md:grid-cols-[40%,1fr] lg:grid-cols-[1fr_40%]">
             <div class="flex justify-center">
                 <img src="./img/vector2.svg" class="w-3/5" alt="">
             </div>
             <div class="space-y-6 flex flex-col justify-center">
-                <h1 class="text-4xl text-gray-900 font-semibold">We Provide Many Features You Can Use</h1>
-                <p class="text-gray-500">
+                <h1 class="text-2xl text-center md:text-left md:text-4xl text-gray-900 font-semibold">We Provide Many Features You Can Use</h1>
+                <p class="text-gray-500 text-center md:text-left">
                     You can explore the features that we provide with fun and have their own functions each feature.
                 </p>
-                <div class="space-y-4">
+                <div class="space-y-4 flex flex-col items-center sm:items-start">
                     <div class="text-gray-500">
                         <i class="bi bi-check-circle-fill text-green-600 mr-3"></i> Powerfull online protection.
                     </div>
@@ -101,10 +103,10 @@
         </div>
 
         <div class="mt-40 space-y-10">
-            <div class="text-4xl text-gray-900 font-semibold text-center">Choose your plan</div>
+            <div class="text-2xl md:text-4xl text-gray-900 font-semibold text-center">Choose your plan</div>
             <div class="text-gray-500 text-center max-w-md m-auto">Let's choose the package that is best for you and explore it happily and cheerfully.</div>
 
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="border-2 flex flex-col items-center justify-between border-gray-300 py-16 h-[760px] rounded-xl">
                     <div class="space-y-6 flex flex-col items-center">
                         <img src="./img/plan-icon.svg" alt="">
@@ -192,28 +194,28 @@
         </div>
 
         <div class="mt-40 flex flex-col items-center">
-            <h1 class="text-4xl text-gray-900 max-w-md text-center font-semibold">Huge Global Network of Fast VPN</h1>
+            <h1 class="text-2xl md:text-4xl text-gray-900 max-w-md text-center font-semibold">Huge Global Network of Fast VPN</h1>
             <p class="text-gray-500 max-w-md text-center my-6">
                 See <span class="font-semibold">LaslesVPN</span> everywhere to make it easier for you when you move locations.
             </p>
-            <img src="./img/global.svg" alt="" class="max-w-screen-xl mt-20">
-            <div class="flex gap-5 mt-5">
-                <img src="./img/netflix.svg" alt="">
-                <img src="./img/reddit.svg" alt="">
-                <img src="./img/amazon.svg" alt="">
-                <img src="./img/discord.svg" alt="">
-                <img src="./img/spotify.svg" alt="">
+            <img src="./img/global.svg" alt="" class="mt-5 lg:max-w-screen-xl md:mt-20">
+            <div class="flex gap-5 mt-5 overflow-auto">
+                <img src="./img/netflix.svg" alt="" class="w-32 md:w-full">
+                <img src="./img/reddit.svg" alt="" class="w-32 md:w-full">
+                <img src="./img/amazon.svg" alt="" class="w-32 md:w-full">
+                <img src="./img/discord.svg" alt="" class="w-32 md:w-full">
+                <img src="./img/spotify.svg" alt="" class="w-32 md:w-full">
             </div>
         </div>
 
         <div class="mt-40 flex flex-col items-center mb-10">
-            <h1 class="text-4xl text-gray-900 text-center max-w-md">
+            <h1 class="text-2xl md:text-4xl text-gray-900 text-center max-w-md">
                 Trusted by Thousands of Happy Customer
             </h1>
             <p class="text-center text-gray-500 max-w-md my-6">
                 These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
             </p>
-            <div id="testimonials" class="w-full flex gap-10 mt-10 overflow-x-auto">
+            <div id="testimonials" class="flex flex-col md:flex-row gap-10 mt-10">
                 <div class="test-card">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-4">
@@ -279,10 +281,10 @@
             </div>
         </div>
     </div>
-    <div class="mt-40 relative px-32">
-        <div class="bg-white w-5/6 rounded-2xl p-12 px-16 flex justify-between items-center shadow-3xl absolute -bottom-32">
+    <div class="mt-40 md:mt-20 relative px-6 md:px-16 lg:px-32 lg:pt-20">
+        <div class="bg-white w-5/6 rounded-2xl p-6 lg:p-12 lg:px-16 flex flex-col md:flex-row justify-between items-center shadow-3xl absolute -bottom-32 md:mb-10">
             <div class="flex flex-col justify-center">
-                <h1 class="text-gray-900 font-bold text-4xl max-w-md tracking-wider">
+                <h1 class="text-gray-900 font-bold text-2xl md:text-3xl lg:text-4xl max-w-md tracking-wider">
                     Subscribe Now for Get Special Features!
                 </h1>
                 <p class="text-gray-500 my-4">Let's subscribe with us and find the fun.</p>
@@ -290,8 +292,8 @@
             <button class="btn-primary">Subscribe now</button>
         </div>
     </div>
-    <footer class="bg-gray-100 p-32 pt-48 grid grid-cols-[40%_repeat(3,1fr)] gap-20">
-        <div class="flex flex-col">
+    <footer class="bg-gray-100 p-10 md:p-32 pt-48 grid grid-cols-2 lg:grid-cols-[40%_repeat(3,1fr)] gap-10 lg:gap-20">
+        <div class="col-span-2 flex flex-col">
             <img src="./img/logo.svg" alt="" width="149px">
             <p class="text-gray-500 max-w-sm my-6">
                 <span class="font-bold">LaslesVPN</span> is a private virtual network that has unique features and has high security.
